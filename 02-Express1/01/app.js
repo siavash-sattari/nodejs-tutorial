@@ -18,7 +18,7 @@ app.get('/auth/login', (req, res) => {
 app.get('/profile/:userId', (req, res) => {
   res.send({
     status: true,
-    message: 'Showing the login page',
+    message: 'Showing the profile page',
     user_id: req.params.userId
   });
 });
@@ -26,7 +26,7 @@ app.get('/profile/:userId', (req, res) => {
 app.get('/profile/:userId/addresses/:addressId', (req, res) => {
   res.send({
     status: true,
-    message: 'Showing the login page',
+    message: 'Showing the profile page',
     user_id: req.params.userId,
     address_id: req.params.addressId
   });
